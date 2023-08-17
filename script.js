@@ -30,9 +30,7 @@ const btn = document.getElementById("btn");
    }
    function saveAs(){
     var filedata = document.getElementById("result").value;
-   // var data = [];
-   // data.push(filedata);
-    //var data_str = JSON.stringify(data);
+   
     var file = new Blob([filedata], {type: "text"});
     var anchor = document.createElement("a");
     anchor.href = URL.createObjectURL(file);
